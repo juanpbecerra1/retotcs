@@ -1,0 +1,41 @@
+<div class="container m-5 col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h3>Empleados</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                    <th>Id Empleado</th>
+                    <th>Identificación</th>
+                    <th>Nombre Completo Empleado</th>
+                    <th>Correo</th>
+                    <th>Telefono</th>
+                    <th>Activo</th>
+                    <th>Salario</th>
+                    <th>Departamento</th>
+                    <th>Acciones</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let empleado of empleados" class="text-center">
+                        <td>{{empleado.id}}</td>
+                        <td>{{empleado.identificacion}}</td>
+                        <td>{{empleado.primerNombre}} {{empleado.segundoNombre}} {{empleado.primerApellido}} {{empleado.segundoApellido}}</td>
+                        <td>{{empleado.correo}}</td>
+                        <td>{{empleado.telefono}}</td>
+                        <td >{{empleado.activo}}</td>   
+                        <td>{{empleado.salario}}</td>
+                        <td>{{empleado.departamento.nombre}}
+                        <button (click)="verFunciones(empleado)" class="btn btn-primary btn-sm">Ver Funciones</button>
+                        </td>
+                        <td>                            
+                            <button (click)="Editar(empleado)" class="btn btn-warning">Editar</button>
+                            <button class="btn btn-danger">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="container m-5">
+    <div class="card">
+        <div class="card-header">
+            <h3>Empleados</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                    <th>Id Empleado</th>
+                    <th>Identificación</th>
+                    <th>Nombre Completo Empleado</th>
+                    <th>Correo</th>
+                    <th>Telefono</th>
+                    <th>Activo</th>
+                    <th>Salario</th>
+                    <th>Departamento</th>
+                </thead>
+                <tbody>
+                    <tr class="text-center">
+                        <td>{{empleados.id}}</td>
+                        <td>{{empleados.identificacion}}</td>
+                        <td>{{empleados.primerNombre}} {{empleados.segundoNombre}} {{empleados.primerApellido}} {{empleados.segundoApellido}}</td>
+                        <td>{{empleados.correo}}</td>
+                        <td>{{empleados.telefono}}</td>
+                        <td *ngIf="empleados.activo==1">Activo</td>
+                        <td *ngIf="empleados.activo==0">Inactivo</td>
+                        <td>{{empleados.salario}}</td>
+                        <td>{{empleados.departamento.nombre}}</td>
+                         <td>
+                            <button class="btn btn-warning" (click)='cambiarEstado(empleados)'>Activar/Desactivar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>

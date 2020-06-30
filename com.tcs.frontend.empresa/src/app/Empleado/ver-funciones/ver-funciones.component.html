@@ -1,0 +1,22 @@
+<div style="width: 100%; height: 50px; margin-top: 1%; text-align: center" class="text-dark bg-light rounded">
+
+    <div class="card">
+        <div class="card-header">
+            <h3>Funciones Empleado</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                    <th>Identificación Empleado</th>
+                    <th>Funcion</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let empleadofuncion of empleadoFunciones" class="text-center">
+                        <td>{{empleadofuncion.identificacionEmpleado}}</td>
+                        <td>{{empleadofuncion.funcion.descripcion}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
