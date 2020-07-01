@@ -1,0 +1,20 @@
+Pasos para ejecución del proyecto
+
+1. Descargar el repositorio o clonarlo.
+
+##SQL
+2. Correr el script de la base de datos(empresa.sql) que se encuentra en la carpeta tcs, con las siguientes configuraciones:
+ -Schema: schemaempresa
+ -username= BDempresa
+ -password= Empresa.123
+
+## Backend
+3. Iniciar el proyecto del back desarrollado en java con los siguientes comandos:  
+```gradle gradlew```
+```gradle bootRun```
+
+## Frontend
+4. Iniciar el proyecto del front desarrollado en Angular8 con los siguientes comandos:
+```npm install```
+```ng serve```
+
