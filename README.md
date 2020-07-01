@@ -6,7 +6,7 @@ Este repositorio se hizo con el objetivo de cumplir con la prueba técnica envia
 - Se implementan cuatro apis para mayor independencia de cada componente.
 - Se crean diferentes interfaces y clases necesarias para el funcionamiento del api(Controllers,Repository,Service y ServiceImp) con sus respectivas anotaciones(Entity,   Service, Etc).
 
-## Front
+## Frontend
 - Version angular: 8.3.20
 - Version node: 13.1.0..
 - Version bootstrap: 4.3.1
